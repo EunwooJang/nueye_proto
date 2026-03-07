@@ -8,6 +8,6 @@ echo 0 > /tmp/is_HV_Log_Enabled
 sleep 6
 
 Log_Message_Print INFO HV_Log "HV logging stopped."
-Log_Message_Print INFO HV_Monitor "Stop HV stopped."
+Log_Message_Print INFO HV_Monitor "HV monitoring stopped."
 Log_Message_Print_Empty
 

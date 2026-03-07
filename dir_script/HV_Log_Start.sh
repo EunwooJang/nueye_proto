@@ -1,5 +1,5 @@
 if [ "$(cat /tmp/is_HV_Log_Enabled 2>/dev/null || echo 0)" -eq 1 ]; then
-    Log_Message_Print ERROR HV_Log_Start "HV Board is  already started."
+    Log_Message_Print ERROR HV_Log_Start "HV Board is already started."
     return 1
 fi
 

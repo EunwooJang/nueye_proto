@@ -63,7 +63,7 @@ if [[ "$(cat /tmp/is_HV_Off_By_Run_Failure 2>/dev/null || echo 0)" -eq 0 ]]; the
 fi
 
 if [ "$(cat /tmp/is_HV_Log_Enabled 2>/dev/null || echo 0)" -eq 1 ]; then
-    Log_Message_Write Warning HV_Log_End "HV Logging stop not declared on your macro. Auto terminated."
+    Log_Message_Write WARNING HV_Log "HV Logging stop not declared on your macro. Auto terminated."
     . dir_script/HV_Log_End.sh
     return 1
 fi

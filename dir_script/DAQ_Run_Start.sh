@@ -251,7 +251,7 @@ if [[ "$Mode" == "event" ]]; then
             break
         fi
 
-        Log_Message_Print WARNING DAQ_Run_Start "[${i+1}/${MAX_ITER}] File size abnormal: ${ACTUAL_BYTES} B < ${LOWER} B. Deleting and restarting..."
+        Log_Message_Print WARNING DAQ_Run_Start "[$((i+1))/${MAX_ITER}] File size abnormal: ${ACTUAL_BYTES} B < ${LOWER} B. Deleting and restarting..."
         find "$DAQ_Run_Sub_Folder_Path" -name "*root*" -type f -delete
 
         if [[ $((i+1)) -eq $MAX_ITER ]]; then
